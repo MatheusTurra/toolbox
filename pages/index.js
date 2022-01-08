@@ -1,9 +1,9 @@
-import { SideNavbar } from "../components/SideNavbar"
+import { Sidebar } from "../components/Sidebar"
 
 export default function Home() {
   return (
     <>
-      <SideNavbar /> 
+      <Sidebar /> 
     </>
   )
 }

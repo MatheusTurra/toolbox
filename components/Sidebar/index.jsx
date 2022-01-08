@@ -1,6 +1,7 @@
+import { sidebarData } from './sidebarData';
 import styles from './styles.module.css'
 
-export function SideNavbar() {
+export function Sidebar() {
   return (
     <nav className={styles.navbar}>
         <div className={styles.logo}>
@@ -10,17 +11,8 @@ export function SideNavbar() {
         <div className={styles.searchBar}>
           <input type="text" placeholder="Pesquisar ferramenta..."/>
           <div className={styles.list}>
-            <ul>
-              <li>
-                ferramenta 1 (Componentizar)
-              </li>
-              <li>
-                ferramenta 2
-              </li>
-              <li>
-                ferramenta 3
-              </li>
-            </ul>
+            {sidebarData.map((item) => {
+            })}
           </div>
         </div>
       </div>
