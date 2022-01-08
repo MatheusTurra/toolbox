@@ -29,6 +29,7 @@
   padding:0 9px;
   padding-top: 15px;
   background: var(--secondary);
+  overflow-y: auto;
 }
 
 .listContainer .searchBar input{
@@ -38,8 +39,11 @@
 }
 
 .listContainer .list {
+  display: block;
   border: 1px solid red;
+}
+
+.listContainer .list ul {
   list-style: none;
   padding: 0;
 }
-

@@ -9,17 +9,19 @@ export function SideNavbar() {
       <div className={styles.listContainer}>
         <div className={styles.searchBar}>
           <input type="text" placeholder="Pesquisar ferramenta..."/>
-          <ul className={styles.list}>
-            <li>
-              ferramenta 1 (Componentizar)
-            </li>
-            <li>
-              ferramenta 2 (Fazer o scroll interno funcionar)
-            </li>
-            <li>
-              ferramenta 3
-            </li>
-          </ul>
+          <div className={styles.list}>
+            <ul>
+              <li>
+                ferramenta 1 (Componentizar)
+              </li>
+              <li>
+                ferramenta 2
+              </li>
+              <li>
+                ferramenta 3
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
