@@ -1,0 +1,45 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200px;
+  background: var(--primary);
+}
+
+.navbar .logo {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .logo h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.navbar .logo span {
+  color: blue;
+}
+
+.navbar .listContainer {
+  height: 100%;
+  margin-top: 20px;  
+  padding:0 9px;
+  padding-top: 15px;
+  background: var(--secondary);
+}
+
+.listContainer .searchBar input{
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.listContainer .list {
+  border: 1px solid red;
+  list-style: none;
+  padding: 0;
+}
+
