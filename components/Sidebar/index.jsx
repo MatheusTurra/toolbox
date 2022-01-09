@@ -1,7 +1,11 @@
-import { SidebarMenu } from '../SidebarMenu';
+import { SidebarList } from '../SidebarList';
 import { sidebarData } from './sidebarData';
 
 import styles from './styles.module.css'
+
+/**
+ * TODO: FAZER A NAVBAR VOLTAR NO DIRETO NO HOVER QUANDO TIVER FECHADA
+ */
 
 export function Sidebar() {
   return (
@@ -16,7 +20,7 @@ export function Sidebar() {
             <input type="text" placeholder="Pesquisar..."/>
             <div className={styles.list}>
               {sidebarData.map((item, index) => {
-                return (<SidebarMenu 
+                return (<SidebarList 
                   key={index}
                   path={item.path}
                   title={item.title}

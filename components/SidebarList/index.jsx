@@ -1,10 +1,8 @@
 import { useState } from 'react'
 import styles from './styles.module.css'
 
-export function SidebarMenu(props) {
+export function SidebarList(props) {
   const [showSubList, setShowSubList] = useState(false)
-
-  console.log(showSubList) 
 
   return (
     <>
