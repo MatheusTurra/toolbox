@@ -1,21 +1,36 @@
+import { useState } from 'react';
 import { SidebarList } from '../SidebarList';
 import { sidebarData } from './sidebarData';
 
 import styles from './styles.module.css'
 
-/**
- * TODO: FAZER A NAVBAR VOLTAR NO DIRETO NO HOVER QUANDO TIVER FECHADA
- */
-
 export function Sidebar() {
+  const [showSidebar, setShowSidebar] = useState(true);
+
+  function expandHiddenSidebar() {
+    if(showSidebar === false) {
+      setTimeout(() => {
+        setShowSidebar(true);
+      }, 500);
+    }
+  }
+
   return (
     <>
-      <nav className={styles.navbar}>
+      <nav 
+        className={showSidebar ? styles.navbar : styles.hideNavbar}
+        onMouseEnter={expandHiddenSidebar}
+      >
           <div className={styles.logoContainer}>
-            <h1>Dev <span>Toolbox</span> </h1>
-            <button> &lt; </button>
+            {showSidebar 
+              ? <h1>Dev <span>Toolbox</span> </h1>
+              : <h1>D <span>TB</span></h1>
+            }
+            <button onClick={() => setShowSidebar(!showSidebar)}>
+               {showSidebar ? '<' : '>'} 
+              </button>
           </div>
-        <div className={styles.listContainer}>
+        <div className={showSidebar ? styles.listContainer : styles.displayNone}>
           <div className={styles.searchBar}>
             <input type="text" placeholder="Pesquisar..."/>
             <div className={styles.list}>
@@ -25,7 +40,7 @@ export function Sidebar() {
                   path={item.path}
                   title={item.title}
                   icon={item.icon} 
-                  subMenu={item.subMenu}
+                  subList={item.subList}
                 />);
               })}
             </div>

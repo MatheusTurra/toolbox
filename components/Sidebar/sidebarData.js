@@ -3,7 +3,7 @@ export const sidebarData = [
     path: '#',
     title: 'titulo',
     icon: '*',
-    subMenu: [
+    subList: [
       {
         path: '#',
         title: 'Ferramenta',
@@ -20,7 +20,7 @@ export const sidebarData = [
     path: '#',
     title: 'titulo 2',
     icon: '*',
-    subMenu: [
+    subList: [
       {
         path: '#',
         title: 'Ferramenta 2',

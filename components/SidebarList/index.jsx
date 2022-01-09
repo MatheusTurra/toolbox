@@ -16,12 +16,10 @@ export function SidebarList(props) {
             <span className={styles.icon}>
               {props.icon}
             </span>
-
             {props.title}
           </a>
-
-            {props.subMenu.length > 0 && 
-              props.subMenu.map((item, index) => {
+            {props.subList.length > 0 && 
+              props.subList.map((item, index) => {
                 return(
                   <div 
                     key={index}

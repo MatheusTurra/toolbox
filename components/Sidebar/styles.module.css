@@ -7,7 +7,33 @@
   background: var(--primary);
 }
 
-.navbar:hover {
+.hideNavbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--primary);
+  width: 85px;
+}
+
+.hideNavbar .logoContainer h1 {
+  color: var(--text-light);
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 10px 10px;
+}
+
+.hideNavbar .logoContainer span {
+  color: var(--main);
+}
+
+.hideNavbar .logoContainer button {
+  margin-left: 75px;
+  margin-top: -48px;
+}
+
+
+.hideNavbar:hover {
   border-right: 3px solid var(--deep-blue);
 }
 
@@ -30,7 +56,7 @@
   color: var(--main);
 }
 
-.navbar .logoContainer button {
+.logoContainer button {
   display: flex;
   align-items: center;
   height: 23px;
@@ -41,7 +67,9 @@
   color: var(--secondary);
 }
 
-.navbar .logoContainer button:hover {
+
+
+.logoContainer button:hover {
   background: var(--light-blue);
   box-shadow: 0 0 7px var(--deep-blue);
 }
@@ -81,4 +109,8 @@
 .listContainer .list ul {
   list-style: none;
   padding: 0;
+}
+
+.displayNone {
+  display: none;
 }
