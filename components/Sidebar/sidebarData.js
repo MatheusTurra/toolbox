@@ -6,14 +6,24 @@ export const sidebarData = [
     subList: [
       {
         path: '#',
-        title: 'Ferramenta',
+        title: 'Ferramenta 1',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 2',
         icon: '*',
       },
       {
         path: '#',
         title: 'Ferramenta 3',
         icon: '*',
-      }
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 4',
+        icon: '*',
+      },
     ]
   },
   {
@@ -23,9 +33,127 @@ export const sidebarData = [
     subList: [
       {
         path: '#',
+        title: 'Ferramenta 1',
+        icon: '*',
+      },
+      {
+        path: '#',
         title: 'Ferramenta 2',
         icon: '*',
-      }
-    ]
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 3',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 4',
+        icon: '*',
+      },      {
+        path: '#',
+        title: 'Ferramenta 1',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 2',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 3',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 4',
+        icon: '*',
+      },      {
+        path: '#',
+        title: 'Ferramenta 1',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 2',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 3',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 4',
+        icon: '*',
+      },
+    ],
+  },
+  {
+    path: '#',
+    title: 'titulo 3',
+    icon: '*',
+    subList: [
+      {
+        path: '#',
+        title: 'Ferramenta 1',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 2',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 3',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 4',
+        icon: '*',
+      },      {
+        path: '#',
+        title: 'Ferramenta 1',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 2',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 3',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 4',
+        icon: '*',
+      },      {
+        path: '#',
+        title: 'Ferramenta 1',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 2',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 3',
+        icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 4',
+        icon: '*',
+      },
+    ],
   }
 ]

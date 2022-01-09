@@ -21,7 +21,7 @@ export function Sidebar() {
         className={showSidebar ? styles.navbar : styles.hideNavbar}
         onMouseEnter={expandHiddenSidebar}
       >
-          <div className={styles.logoContainer}>
+          <section className={styles.logoContainer}>
             {showSidebar 
               ? <h1>Dev <span>Toolbox</span> </h1>
               : <h1>D <span>TB</span></h1>
@@ -29,8 +29,8 @@ export function Sidebar() {
             <button onClick={() => setShowSidebar(!showSidebar)}>
                {showSidebar ? '<' : '>'} 
               </button>
-          </div>
-        <div className={showSidebar ? styles.listContainer : styles.displayNone}>
+          </section>
+        <section className={showSidebar ? styles.listContainer : styles.displayNone}>
           <div className={styles.searchBar}>
             <input type="text" placeholder="Pesquisar..."/>
             <div className={styles.list}>
@@ -45,7 +45,7 @@ export function Sidebar() {
               })}
             </div>
           </div>
-        </div>
+        </section>
       </nav>
     </>
   );

@@ -75,11 +75,24 @@
 }
 
 .navbar .listContainer {
-  height: 100%;
+  height: 75%;
   margin-top: 20px;  
   padding-top: 20px;
   background: var(--secondary);
-  overflow-y: auto;
+  overflow: auto;
+  scrollbar-color: var(--main) rgba(183, 181, 179, 0.2);
+}
+
+.navbar .listContainer::-webkit-scrollbar {
+  width: 10px;
+  background-color: #aaa; 
+  background: rgba(183, 181, 179, 0.2);
+}
+
+.navbar .listContainer::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border-radius: 10px;
+
 }
 
 .listContainer .searchBar input{
