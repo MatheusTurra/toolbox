@@ -1,6 +1,7 @@
 :root {
-  --primary: yellow;
-  --secondary: darkgoldenrod;
+  --primary: #000;
+  --secondary: #353535;
+  --text-light: #fdfdfd;
 }
 
 html {

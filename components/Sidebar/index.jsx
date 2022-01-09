@@ -1,21 +1,32 @@
+import { SidebarMenu } from '../SidebarMenu';
 import { sidebarData } from './sidebarData';
+
 import styles from './styles.module.css'
 
 export function Sidebar() {
   return (
-    <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <h1>Dev <span>Toolbox</span> </h1>
-        </div>
-      <div className={styles.listContainer}>
-        <div className={styles.searchBar}>
-          <input type="text" placeholder="Pesquisar ferramenta..."/>
-          <div className={styles.list}>
-            {sidebarData.map((item) => {
-            })}
+    <>
+      <nav className={styles.navbar}>
+          <div className={styles.logo}>
+            <h1>Dev <span>Toolbox</span> </h1>
+          </div>
+        <div className={styles.listContainer}>
+          <div className={styles.searchBar}>
+            <input type="text" placeholder="Pesquisar..."/>
+            <div className={styles.list}>
+              {sidebarData.map((item, index) => {
+                return (<SidebarMenu 
+                  key={index}
+                  path={item.path}
+                  title={item.title}
+                  icon={item.icon} 
+                  subMenu={item.subMenu}
+                />);
+              })}
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }

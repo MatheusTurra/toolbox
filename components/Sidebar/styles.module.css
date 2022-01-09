@@ -3,15 +3,15 @@
   left: 0;
   top: 0;
   height: 100%;
-  width: 200px;
+  width: 270px;
   background: var(--primary);
 }
 
 .navbar .logo {
   display: flex;
   margin-top: 10px;
-  align-items: center;
-  justify-content: center;
+  margin-left: 15px;
+  color: var(--text-light);
 }
 
 .navbar .logo h1 {
@@ -26,21 +26,33 @@
 .navbar .listContainer {
   height: 100%;
   margin-top: 20px;  
-  padding:0 9px;
-  padding-top: 15px;
+  padding-top: 20px;
   background: var(--secondary);
   overflow-y: auto;
 }
 
 .listContainer .searchBar input{
-  border: 2px solid black;
+  border: 2px solid var(--secondary);
+  margin-left: 15px;
   border-radius: 5px;
   height: 30px;
+  width: 80%;
+  margin-bottom: 15px;
+  background: rgba(183, 181, 179, 0.5);
+  color: var(--text-light);
+}
+
+.listContainer .searchBar input::placeholder {
+  color: var(--text-light);
+}
+
+.listContainer .searchBar input:focus {
+  /* colocar isso em variável */
+  border: 1px solid blue;
 }
 
 .listContainer .list {
   display: block;
-  border: 1px solid red;
 }
 
 .listContainer .list ul {
