@@ -47,8 +47,8 @@
 }
 
 .listContainer .searchBar input:focus {
-  /* colocar isso em variável */
-  border: 1px solid blue;
+  box-shadow: 0 0 7px var(--deep-blue);
+  transition: 1s;
 }
 
 .listContainer .list {
