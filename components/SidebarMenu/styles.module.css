@@ -1,6 +1,5 @@
-
 .list .icon {
-  margin:5px 5px;
+  margin: 5px;
 }
 
 .list .title {
@@ -20,13 +19,24 @@
   background: rgba(183, 181, 179, 0.5);
 }
 
-.subMenuList li{
+.subMenuList .subMenuIcon {
+  margin-right: 5px;
+}
+
+.subMenuList .subMenuTitle{
   height: 30px;
   display: flex;
   align-items: center;
-  padding-left: 45px;
+  margin-left: 30px;
+  padding-left: 10px;
   color: var(--text-light);
   font-size: 1.2rem;
+  border-left: 1px solid var(--primary);
+
+}
+
+.hideSubMenuList {
+  display: none;
 }
 
 .subMenuList li:hover {

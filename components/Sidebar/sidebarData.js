@@ -1,6 +1,6 @@
 export const sidebarData = [
   {
-    path: '/',
+    path: '#',
     title: 'titulo',
     icon: '*',
     subMenu: [
@@ -8,11 +8,16 @@ export const sidebarData = [
         path: '#',
         title: 'Ferramenta',
         icon: '*',
+      },
+      {
+        path: '#',
+        title: 'Ferramenta 3',
+        icon: '*',
       }
     ]
   },
   {
-    path: '/',
+    path: '#',
     title: 'titulo 2',
     icon: '*',
     subMenu: [

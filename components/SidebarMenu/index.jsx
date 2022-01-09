@@ -1,11 +1,20 @@
+import { useState } from 'react'
 import styles from './styles.module.css'
 
 export function SidebarMenu(props) {
+  const [showSubList, setShowSubList] = useState(false)
+
+  console.log(showSubList) 
+
   return (
     <>
       <ul className={styles.list}>
         <li>
-          <a className={styles.title} href={props.path}>
+          <a 
+            className={styles.title}
+            href={props.path}
+            onClick={() => setShowSubList(!showSubList)}
+          >
             <span className={styles.icon}>
               {props.icon}
             </span>
@@ -16,11 +25,14 @@ export function SidebarMenu(props) {
             {props.subMenu.length > 0 && 
               props.subMenu.map((item, index) => {
                 return(
-                  <div className={styles.subMenuList}>
+                  <div 
+                    key={index}
+                    className={ showSubList ? styles.subMenuList : styles.hideSubMenuList}
+                    >
                     <ul>
                       <li>
-                        <a key={index} href={item.href}>
-                          {item.title}
+                        <a className={styles.subMenuTitle} href={item.href}>
+                          <span className={styles.subMenuIcon}> {item.icon} </span> {item.title}
                         </a>
                       </li>
                     </ul>
