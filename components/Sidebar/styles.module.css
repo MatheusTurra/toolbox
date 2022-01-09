@@ -7,20 +7,43 @@
   background: var(--primary);
 }
 
-.navbar .logo {
+.navbar:hover {
+  border-right: 3px solid var(--deep-blue);
+}
+
+.navbar .logoContainer {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 10px;
-  margin-left: 15px;
+  margin-left: 25px;
+  margin-right: -13px;
   color: var(--text-light);
 }
 
-.navbar .logo h1 {
+.navbar .logoContainer h1 {
   font-size: 2rem;
   font-weight: 900;
 }
 
-.navbar .logo span {
-  color: blue;
+.navbar .logoContainer span {
+  color: var(--main);
+}
+
+.navbar .logoContainer button {
+  display: flex;
+  align-items: center;
+  height: 23px;
+  margin-left: 10px;
+  font-size: 2.1rem;
+  border-radius: 20px;
+  border: none;
+  color: var(--secondary);
+}
+
+.navbar .logoContainer button:hover {
+  background: var(--light-blue);
+  box-shadow: 0 0 7px var(--deep-blue);
 }
 
 .navbar .listContainer {

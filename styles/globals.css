@@ -1,9 +1,11 @@
 :root {
+  --main: #fdc500;
   --primary: #000;
   --secondary: #353535;
   --text-light: #fdfdfd;
 
   --deep-blue: #0582ca;
+  --light-blue: #5fa8d3;
 }
 
 html {

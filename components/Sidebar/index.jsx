@@ -7,8 +7,9 @@ export function Sidebar() {
   return (
     <>
       <nav className={styles.navbar}>
-          <div className={styles.logo}>
+          <div className={styles.logoContainer}>
             <h1>Dev <span>Toolbox</span> </h1>
+            <button> &lt; </button>
           </div>
         <div className={styles.listContainer}>
           <div className={styles.searchBar}>
